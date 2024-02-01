@@ -1,0 +1,13 @@
+.container {
+  @extend %flex-between;
+  padding: 6px 16px;
+  padding-bottom: 34px;
+  background: linear-gradient(0deg, #f1f1f2 0%, #f1f1f2 100%), #f1f1f2;
+  border-top: 0.33px solid rgba(60, 60, 67, 0.36);
+  background-blend-mode: normal, soft-light;
+
+  &_button {
+    padding: 5px 8px;
+    min-width: 89px;
+  }
+}

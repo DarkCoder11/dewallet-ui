@@ -1,0 +1,84 @@
+.container {
+  margin-bottom: 20px;
+  @extend %flex-between;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &_box {
+    @extend %flex-align;
+    position: relative;
+    gap: 12px;
+
+    &_icon {
+      display: flex;
+
+      &_action {
+        left: 27px;
+        bottom: -2px;
+        display: flex;
+        position: absolute;
+      }
+    }
+
+    &_info {
+      &_label {
+        color: $black;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.43px;
+      }
+
+      &_name {
+        color: $gray;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.15px;
+      }
+
+      &_value {
+        @extend %flex-column;
+        color: $black;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: -0.43px;
+
+        &_date {
+          color: $gray;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: -0.15px;
+        }
+
+        &_value {
+          color: $black;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 22px;
+          letter-spacing: -0.43px;
+
+          &_date {
+            color: $gray;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -0.15px;
+          }
+        }
+
+        &_nest {
+          color: $green;
+
+          &_deposit {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}

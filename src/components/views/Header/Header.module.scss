@@ -1,0 +1,25 @@
+.container {
+  @extend %flex-between;
+  padding: 0 16px;
+
+  &_head {
+    @extend %flex-center-column;
+    padding-top: 9px;
+
+    &_title {
+      color: $black;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: -0.43px;
+    }
+
+    &_bot {
+      color: $gray-1;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.078px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 17px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 0.33px solid rgba(120, 120, 128, 0.16);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(60, 60, 67, 0.3);
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &_icon {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+  }
+}

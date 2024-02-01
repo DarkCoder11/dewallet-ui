@@ -1,0 +1,37 @@
+.container {
+  @extend %flex-center-column;
+  gap: 12px;
+  padding: 40px 0;
+
+  &_box {
+    &_whole {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: -0.26px;
+    }
+
+    &_decimal {
+      color: #747480;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: -0.26px;
+    }
+
+    &_dot {
+      color: #747480;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    &_title {
+      color: #8e8e93;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: -0.15px;
+    }
+  }
+}

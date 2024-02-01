@@ -1,0 +1,118 @@
+.container {
+  padding: 0 16px;
+
+  &_sum {
+    @extend %flex-center;
+    flex-direction: column;
+    padding: 40px 0 64px 0;
+
+    &_title {
+      width: 164px;
+      height: 27px;
+      margin-bottom: 12px;
+      border-radius: 32px;
+      background-color: $skeletonGray;
+    }
+
+    &_subtitle {
+      width: 118px;
+      height: 17px;
+      border-radius: 32px;
+      background-color: $skeletonGray;
+    }
+  }
+
+  &_actions {
+    @extend %flex-between;
+    gap: 8px;
+    margin-bottom: 32px;
+
+    &_deposit {
+      width: 134.5px;
+      height: 50px;
+      border-radius: 32px;
+      background-color: $skeletonGray;
+    }
+    &_send {
+      width: 134.5px;
+      height: 50px;
+      border-radius: 32px;
+      background-color: $skeletonGray;
+    }
+
+    &_buy {
+      width: 73px;
+      height: 50px;
+      border-radius: 32px;
+      background-color: $skeletonGray;
+
+      &_dfc {
+        width: 100%;
+        height: 32px;
+        border-radius: 32px;
+        background-color: $skeletonGray;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &_items {
+    @extend %flex-between;
+
+    &_round {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $skeletonGray;
+
+      &_value {
+        width: 118px;
+        height: 17px;
+        border-radius: 32px;
+        background-color: $skeletonGray;
+      }
+
+      &_name {
+        width: 89px;
+        height: 12px;
+        border-radius: 32px;
+        background-color: $skeletonGray;
+      }
+
+      &_wrapper {
+        gap: 8px;
+        @extend %flex-column;
+      }
+    }
+
+    &_wrapper {
+      @extend %flex-align;
+      gap: 12px;
+    }
+
+    &_right {
+      @extend %flex-column;
+      gap: 8px;
+
+      &_value {
+        width: 51px;
+        height: 17px;
+        border-radius: 32px;
+        background-color: $skeletonGray;
+      }
+
+      &_date {
+        width: 34px;
+        height: 12px;
+        border-radius: 32px;
+        background-color: $skeletonGray;
+      }
+    }
+
+    &_box {
+      @extend %flex-column;
+      gap: 17px;
+      margin-bottom: 27px;
+    }
+  }
+}

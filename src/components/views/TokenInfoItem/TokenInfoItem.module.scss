@@ -1,0 +1,39 @@
+.container {
+  @extend %flex-between;
+  margin-bottom: 20px;
+
+  &_box {
+    @extend %flex-align;
+    gap: 12px;
+
+    &_icon {
+      display: flex;
+    }
+
+    &_info {
+      &_label {
+        color: $black;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: -0.43px;
+      }
+
+      &_name {
+        color: $gray;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.15px;
+      }
+
+      &_value {
+        color: $black;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: -0.43px;
+      }
+    }
+  }
+}

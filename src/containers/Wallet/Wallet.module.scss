@@ -1,0 +1,21 @@
+.container {
+  border-radius: 10px 10px 0 0;
+  max-width: 390px;
+  background: linear-gradient(180deg, #c3eaff 0%, #fff 0%, #e1efff 39.6%);
+
+  &_group {
+    @extend %flex-justify-between;
+    gap: 8px;
+    padding-top: 24px;
+
+    &_wrapper {
+      padding: 0 16px;
+      background-color: $white;
+      border-radius: 32px 32px 0 0;
+    }
+
+    &_dfc {
+      padding: 16px 0;
+    }
+  }
+}
